@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="La Table des 2 Chefs — Restaurant de cuisine provençale et française à Marignane. Poissons frais, plats faits maison, cadre chaleureux." />
+  <title>La Table des 2 Chefs — Marignane</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Lato:wght@300;400;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- ========== NAVIGATION ========== -->
+  <header class="site-header" role="banner">
+    <nav class="navbar" aria-label="Navigation principale">
+      <a href="#hero" class="nav-logo" aria-label="La Table des 2 Chefs — accueil">
+        <span class="logo-title">La Table des 2 Chefs</span>
+        <span class="logo-sub">Marignane</span>
+      </a>
+
+      <button class="burger" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="nav-links">
+        <span></span><span></span><span></span>
+      </button>
+
+      <ul class="nav-links" id="nav-links" role="list">
+        <li><a href="#cuisine" class="nav-link">Notre cuisine</a></li>
+        <li><a href="#menu" class="nav-link">Menu</a></li>
+        <li><a href="#reservation" class="nav-link">Réservation</a></li>
+        <li><a href="#acces" class="nav-link">Accès</a></li>
+        <li><a href="#reservation" class="nav-link nav-cta">Réserver une table</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- ========== HERO ========== -->
+    <section id="hero" class="hero" aria-label="Bienvenue">
+      <div class="hero-overlay"></div>
+      <div class="hero-content fade-in">
+        <p class="hero-tagline">Cuisine provençale &amp; française</p>
+        <h1 class="hero-title">La Table des 2 Chefs</h1>
+        <p class="hero-sub">Saveurs authentiques du terroir, poissons de Méditerranée<br>et recettes faites maison au cœur de Marignane.</p>
+        <div class="hero-actions">
+          <a href="#reservation" class="btn btn-primary">Réserver une table</a>
+          <a href="#menu" class="btn btn-outline">Voir le menu</a>
+        </div>
+      </div>
+      <a href="#cuisine" class="scroll-hint" aria-label="Défiler vers le bas">
+        <span class="scroll-arrow"></span>
+      </a>
+    </section>
+
+    <!-- ========== NOTRE CUISINE ========== -->
+    <section id="cuisine" class="section cuisine-section" aria-labelledby="cuisine-title">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-label">Notre identité</span>
+          <h2 id="cuisine-title" class="section-title">Une cuisine du cœur</h2>
+          <p class="section-desc">Deux chefs, une même passion : vous faire voyager à travers les saveurs généreuses de la Provence et de la Méditerranée.</p>
+        </div>
+
+        <div class="cuisine-grid">
+          <article class="cuisine-card reveal" aria-label="Cuisine provençale">
+            <div class="cuisine-card-img" style="background-image: url('https://images.unsplash.com/photo-1565299585323-38d6b0865b47?w=600&q=80');" role="img" aria-label="Ratatouille provençale"></div>
+            <div class="cuisine-card-body">
+              <h3>Saveurs provençales</h3>
+              <p>Herbes de Provence, huile d'olive extra-vierge, tomates gorgées de soleil… nos recettes puisent dans la tradition culinaire de notre région pour vous offrir des plats vibrants et généreux.</p>
+            </div>
+          </article>
+
+          <article class="cuisine-card reveal" aria-label="Poissons et fruits de mer">
+            <div class="cuisine-card-img" style="background-image: url('https://images.unsplash.com/photo-1519708227418-c8fd9a32b7a2?w=600&q=80');" role="img" aria-label="Filet de poisson grillé"></div>
+            <div class="cuisine-card-body">
+              <h3>Poissons &amp; mer</h3>
+              <p>À deux pas de la Méditerranée, nous travaillons des poissons frais sélectionnés chaque matin. Daurade, loup, saint-pierre — cuisinés simplement pour sublimer leur fraîcheur naturelle.</p>
+            </div>
+          </article>
+
+          <article class="cuisine-card reveal" aria-label="Fait maison">
+            <div class="cuisine-card-img" style="background-image: url('https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=600&q=80');" role="img" aria-label="Plat fait maison"></div>
+            <div class="cuisine-card-body">
+              <h3>Tout fait maison</h3>
+              <p>Des sauces aux desserts, tout est préparé sur place avec soin. Pas de compromis sur la qualité : chaque assiette est l'expression d'un travail artisanal, honnête et passionné.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== MENU ========== -->
+    <section id="menu" class="section menu-section" aria-labelledby="menu-title">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-label">À la carte</span>
+          <h2 id="menu-title" class="section-title">Notre menu</h2>
+          <p class="section-desc">Nos plats évoluent au fil des saisons et des arrivages. Voici un aperçu de notre carte.</p>
+        </div>
+
+        <div class="menu-tabs" role="tablist" aria-label="Catégories du menu">
+          <button class="menu-tab active" role="tab" aria-selected="true" aria-controls="tab-entrees" id="btn-entrees">Entrées</button>
+          <button class="menu-tab" role="tab" aria-selected="false" aria-controls="tab-poissons" id="btn-poissons">Poissons</button>
+          <button class="menu-tab" role="tab" aria-selected="false" aria-controls="tab-viandes" id="btn-viandes">Viandes</button>
+          <button class="menu-tab" role="tab" aria-selected="false" aria-controls="tab-desserts" id="btn-desserts">Desserts</button>
+        </div>
+
+        <!-- Entrées -->
+        <div class="menu-panel active" id="tab-entrees" role="tabpanel" aria-labelledby="btn-entrees">
+          <div class="menu-grid">
+            <div class="menu-item reveal">
+              <div class="menu-item-img" style="background-image: url('https://images.unsplash.com/photo-1541014741259-de529411b96a?w=400&q=75');" role="img" aria-label="Soupe de poisson"></div>
+              <div class="menu-item-info">
+                <div class="menu-item-header">
+                  <h3>Soupe de poisson maison</h3>
+                  <span class="menu-price">12 €</span>
+                </div>
+                <p>Rouille safranée, croûtons grillés, gruyère râpé</p>
+              </div>
+            </div>
+            <div class="menu-item reveal">
+              <div class="menu-item-img" style="background-image: url('https://images.unsplash.com/photo-1529694157872-4e0c0f3b238b?w=400&q=75');" role="img" aria-label="Anchoïade et crudités"></div>
+              <div class="menu-item-info">
+                <div class="menu-item-header">
+                  <h3>Anchoïade &amp; légumes du soleil</h3>
+                  <span class="menu-price">10 €</span>
+                </div>
+                <p>Anchois marinés, poivrons rôtis, courgettes, fenouil cru</p>
+              </div>
+            </div>
+            <div class="menu-item reveal">
+              <div class="menu-item-img" style="background-image: url('https://images.unsplash.com/photo-1607532941433-304659e8198a?w=400&q=75');" role="img" aria-label="Terrine de campagne"></div>
+              <div class="menu-item-info">
+                <div class="menu-item-header">
+                  <h3>Terrine maison &amp; confit d'oignons</h3>
+                  <span class="menu-price">9 €</span>
+                </div>
+                <p>Recette traditionnelle, cornichons et pain grillé au beurre</p>
+              </div>
+            </div>
+            <div class="menu-item reveal">
+              <div class="menu-item-img" style="background-image: url('https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=400&q=75');" role="img" aria-label="Salade niçoise"></div>
+              <div class="menu-item-info">
+                <div class="menu-item-header">
+                  <h3>Salade niçoise authentique</h3>
+                  <span class="menu-price">13 €</span>
+                </div>
+                <p>Thon frais, œuf mollet, olives de Nice, tomates cerises, basilic</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Poissons -->
+        <div class="menu-panel" id="tab-poissons" role="tabpanel" aria-labelledby="btn-poissons">
+          <div class="menu-grid">
+            <div class="menu-item reveal">
+              <div class="menu-item-img" style="background-image: url('https://images.unsplash.com/photo-1519708227418-c8fd9a32b7a2?w=400&q=75');" role="img" aria-label="Loup en croûte de sel"></div>
+              <div class="menu-item-info">
+                <div class="menu-item-header">
+                  <h3>Loup en croûte de sel</h3>
+                  <span class="menu-price">26 €</span>
+                </div>
+                <p>Herbes fraîches, fenouil braisé, beurre blanc au citron</p>
+              </div>
+            </div>
+            <div class="menu-item reveal">
+              <div class="menu-item-img" style="background-image: url('https://images.unsplash.com/photo-1467003909585-2f8a72700288?w=400&q=75');" role="img" aria-label="Daurade royale grillée"></div>
+              <div class="menu-item-info">
+                <div class="menu-item-header">
+                  <h3>Daurade royale grillée</h3>
+                  <span class="menu-price">24 €</span>
+                </div>
+                <p>Vierge de tomates, câpres, basilic, pommes de terre à l'huile</p>
+              </div>
+            </div>
+            <div class="menu-item reveal">
+              <div class="menu-item-img" style="background-image: url('https://images.unsplash.com/photo-1559847844-5315695dadae?w=400&q=75');" role="img" aria-label="Bouillabaisse provençale"></div>
+              <div class="menu-item-info">
+                <div class="menu-item-header">
+                  <h3>Bouillabaisse maison</h3>
+                  <span class="menu-price">32 €</span>
+                </div>
+                <p>Sélection de poissons du jour, rouille, croutons, safran de Provence</p>
+              </div>
+            </div>
+            <div class="menu-item reveal">
+              <div class="menu-item-img" style="background-image: url('https://images.unsplash.com/photo-1498654896293-37aacf113fd9?w=400&q=75');" role="img" aria-label="Saint-Pierre poêlé"></div>
+              <div class="menu-item-info">
+                <div class="menu-item-header">
+                  <h3>Saint-Pierre poêlé</h3>
+                  <span class="menu-price">28 €</span>
+                </div>
+                <p>Tapenade d'olives vertes, légumes confits, jus de ratatouille</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Viandes -->
+        <div class="menu-panel" id="tab-viandes" role="tabpanel" aria-labelledby="btn-viandes">
+          <div class="menu-grid">
+            <div class="menu-item reveal">
+              <div class="menu-item-img" style="background-image: url('https://images.unsplash.com/photo-1544025162-d76694265947?w=400&q=75');" role="img" aria-label="Agneau en croûte"></div>
+              <div class="menu-item-info">
+                <div class="menu-item-header">
+                  <h3>Gigot d'agneau en pistou</h3>
+                  <span class="menu-price">23 €</span>
+                </div>
+                <p>Agneau de Provence, gratin de courgettes, jus au thym</p>
+              </div>
+            </div>
+            <div class="menu-item reveal">
+              <div class="menu-item-img" style="background-image: url('https://images.unsplash.com/photo-1432139509613-5c4255815697?w=400&q=75');" role="img" aria-label="Daube provençale"></div>
+              <div class="menu-item-info">
+                <div class="menu-item-header">
+                  <h3>Daube provençale</h3>
+                  <span class="menu-price">21 €</span>
+                </div>
+                <p>Bœuf mijoté au vin rouge, olives noires, carottes, polenta crémeuse</p>
+              </div>
+            </div>
+            <div class="menu-item reveal">
+              <div class="menu-item-img" style="background-image: url('https://images.unsplash.com/photo-1558030006-450675393462?w=400&q=75');" role="img" aria-label="Poulet rôti aux herbes"></div>
+              <div class="menu-item-info">
+                <div class="menu-item-header">
+                  <h3>Poulet fermier rôti aux herbes</h3>
+                  <span class="menu-price">18 €</span>
+                </div>
+                <p>Romarin, ail confit, jus de volaille, frites maison</p>
+              </div>
+            </div>
+            <div class="menu-item reveal">
+              <div class="menu-item-img" style="background-image: url('https://images.unsplash.com/photo-1546039907-7fa05f864c02?w=400&q=75');" role="img" aria-label="Entrecôte grillée"></div>
+              <div class="menu-item-info">
+                <div class="menu-item-header">
+                  <h3>Entrecôte grillée &amp; aïoli</h3>
+                  <span class="menu-price">25 €</span>
+                </div>
+                <p>Viande française, sauce aïoli maison, légumes grillés au feu de bois</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Desserts -->
+        <div class="menu-panel" id="tab-desserts" role="tabpanel" aria-labelledby="btn-desserts">
+          <div class="menu-grid">
+            <div class="menu-item reveal">
+              <div class="menu-item-img" style="background-image: url('https://images.unsplash.com/photo-1488477181946-6428a0291777?w=400&q=75');" role="img" aria-label="Tarte Tatin"></div>
+              <div class="menu-item-info">
+                <div class="menu-item-header">
+                  <h3>Tarte tatin caramélisée</h3>
+                  <span class="menu-price">8 €</span>
+                </div>
+                <p>Pommes fondantes, caramel beurre salé, crème fraîche épaisse</p>
+              </div>
+            </div>
+            <div class="menu-item reveal">
+              <div class="menu-item-img" style="background-image: url('https://images.unsplash.com/photo-1551024506-0bccd828d307?w=400&q=75');" role="img" aria-label="Crème brûlée lavande"></div>
+              <div class="menu-item-info">
+                <div class="menu-item-header">
+                  <h3>Crème brûlée à la lavande</h3>
+                  <span class="menu-price">7 €</span>
+                </div>
+                <p>Infusion de lavande de Provence, caramel doré</p>
+              </div>
+            </div>
+            <div class="menu-item reveal">
+              <div class="menu-item-img" style="background-image: url('https://images.unsplash.com/photo-1563805042-7684c019e1cb?w=400&q=75');" role="img" aria-label="Fondant chocolat"></div>
+              <div class="menu-item-info">
+                <div class="menu-item-header">
+                  <h3>Fondant au chocolat noir</h3>
+                  <span class="menu-price">8 €</span>
+                </div>
+                <p>Cœur coulant, fleur de sel, glace vanille bourbon</p>
+              </div>
+            </div>
+            <div class="menu-item reveal">
+              <div class="menu-item-img" style="background-image: url('https://images.unsplash.com/photo-1470124182917-cc6e71b22ecc?w=400&q=75');" role="img" aria-label="Fruits rouges"></div>
+              <div class="menu-item-info">
+                <div class="menu-item-header">
+                  <h3>Nougat glacé &amp; coulis</h3>
+                  <span class="menu-price">9 €</span>
+                </div>
+                <p>Nougat maison, coulis de fruits rouges, amandes grillées</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ========== RÉSERVATION ========== -->
+    <section id="reservation" class="section reservation-section" aria-labelledby="reservation-title">
+      <div class="container">
+        <div class="reservation-wrapper">
+          <div class="reservation-info reveal">
+            <span class="section-label">Venez nous rendre visite</span>
+            <h2 id="reservation-title" class="section-title">Réserver une table</h2>
+            <p>Pour une expérience optimale, nous vous recommandons de réserver à l'avance. Notre équipe vous confirmera la disponibilité dans les plus brefs délais.</p>
+
+            <div class="hours-block">
+              <h3>Nos horaires</h3>
+              <ul class="hours-list" aria-label="Horaires d'ouverture">
+                <li>
+                  <span class="day">Lundi</span>
+                  <span class="hours closed">Fermé</span>
+                </li>
+                <li>
+                  <span class="day">Mardi – Mercredi</span>
+                  <span class="hours">Midi uniquement</span>
+                </li>
+                <li>
+                  <span class="day">Jeudi – Samedi</span>
+                  <span class="hours">Midi &amp; soir</span>
+                </li>
+                <li>
+                  <span class="day">Dimanche</span>
+                  <span class="hours closed">Fermé</span>
+                </li>
+              </ul>
+            </div>
+
+            <div class="contact-quick">
+              <a href="tel:0781826965" class="btn btn-outline" aria-label="Appeler le restaurant">
+                <svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M6.62 10.79a15.05 15.05 0 0 0 6.59 6.59l2.2-2.2a1 1 0 0 1 1.01-.24 11.36 11.36 0 0 0 3.56.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1.01l-2.2 2.21z"/></svg>
+                07 81 82 69 65
+              </a>
+            </div>
+          </div>
+
+          <form class="reservation-form reveal" id="reservation-form" novalidate aria-label="Formulaire de réservation">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="res-name">Nom &amp; prénom <span aria-hidden="true">*</span></label>
+                <input type="text" id="res-name" name="name" required autocomplete="name" placeholder="Jean Dupont" />
+              </div>
+              <div class="form-group">
+                <label for="res-phone">Téléphone <span aria-hidden="true">*</span></label>
+                <input type="tel" id="res-phone" name="phone" required autocomplete="tel" placeholder="06 XX XX XX XX" />
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="res-date">Date <span aria-hidden="true">*</span></label>
+                <input type="date" id="res-date" name="date" required />
+              </div>
+              <div class="form-group">
+                <label for="res-time">Service <span aria-hidden="true">*</span></label>
+                <select id="res-time" name="time" required>
+                  <option value="" disabled selected>Choisir un service</option>
+                  <option value="midi">Midi (12h00 – 14h00)</option>
+                  <option value="soir">Soir (19h30 – 21h30)</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="res-covers">Nombre de couverts <span aria-hidden="true">*</span></label>
+              <select id="res-covers" name="covers" required>
+                <option value="" disabled selected>Sélectionner</option>
+                <option value="1">1 personne</option>
+                <option value="2">2 personnes</option>
+                <option value="3">3 personnes</option>
+                <option value="4">4 personnes</option>
+                <option value="5">5 personnes</option>
+                <option value="6">6 personnes</option>
+                <option value="7+">7 personnes et plus</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="res-message">Message (facultatif)</label>
+              <textarea id="res-message" name="message" rows="4" placeholder="Allergies, occasion spéciale, demande particulière…"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-full">Envoyer la demande</button>
+            <p class="form-note">* Champs obligatoires. Nous vous contacterons pour confirmer votre réservation.</p>
+            <div class="form-success" id="form-success" aria-live="polite" hidden>
+              <svg aria-hidden="true" width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+              Merci ! Votre demande a bien été envoyée. Nous vous contacterons très bientôt.
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== ACCÈS ========== -->
+    <section id="acces" class="section acces-section" aria-labelledby="acces-title">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-label">Nous trouver</span>
+          <h2 id="acces-title" class="section-title">Accès &amp; contact</h2>
+        </div>
+
+        <div class="acces-grid">
+          <div class="acces-infos reveal">
+            <div class="info-block">
+              <svg aria-hidden="true" class="info-icon" width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+              <div>
+                <h3>Adresse</h3>
+                <address>
+                  31 Cours Mirabeau<br />
+                  13700 Marignane
+                </address>
+              </div>
+            </div>
+
+            <div class="info-block">
+              <svg aria-hidden="true" class="info-icon" width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M6.62 10.79a15.05 15.05 0 0 0 6.59 6.59l2.2-2.2a1 1 0 0 1 1.01-.24 11.36 11.36 0 0 0 3.56.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1.01l-2.2 2.21z"/></svg>
+              <div>
+                <h3>Téléphone</h3>
+                <a href="tel:0781826965">07 81 82 69 65</a>
+              </div>
+            </div>
+
+            <div class="info-block">
+              <svg aria-hidden="true" class="info-icon" width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67V7z"/></svg>
+              <div>
+                <h3>Horaires d'ouverture</h3>
+                <table class="hours-table" aria-label="Horaires détaillés">
+                  <tbody>
+                    <tr><td>Lundi</td><td class="closed">Fermé</td></tr>
+                    <tr><td>Mardi</td><td>12h00 – 14h00</td></tr>
+                    <tr><td>Mercredi</td><td>12h00 – 14h00</td></tr>
+                    <tr><td>Jeudi</td><td>12h00 – 14h00 &amp; 19h30 – 21h30</td></tr>
+                    <tr><td>Vendredi</td><td>12h00 – 14h00 &amp; 19h30 – 21h30</td></tr>
+                    <tr><td>Samedi</td><td>12h00 – 14h00 &amp; 19h30 – 21h30</td></tr>
+                    <tr><td>Dimanche</td><td class="closed">Fermé</td></tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+
+            <div class="info-block">
+              <svg aria-hidden="true" class="info-icon" width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M17 12h-5v5h5v-5zM16 1v2H8V1H6v2H5c-1.11 0-1.99.9-1.99 2L3 19c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2h-1V1h-2zm3 18H5V8h14v11z"/></svg>
+              <div>
+                <h3>Équipements</h3>
+                <ul class="amenities-list">
+                  <li>Restaurant entièrement climatisé</li>
+                  <li>Toilettes sur place</li>
+                  <li>Accès PMR</li>
+                  <li>Parking à proximité</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="acces-map reveal">
+            <iframe
+              title="Localisation de La Table des 2 Chefs, 31 Cours Mirabeau, Marignane"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2900.4520093507743!2d5.2118!3d43.4158!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12c9ebf0bfc7e795%3A0x0!2s31+Cours+Mirabeau%2C+13700+Marignane!5e0!3m2!1sfr!2sfr!4v1700000000000"
+              width="100%"
+              height="100%"
+              style="border:0;"
+              allowfullscreen
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <p class="footer-logo">La Table des 2 Chefs</p>
+          <p class="footer-tagline">Cuisine provençale &amp; française<br />Marignane, Bouches-du-Rhône</p>
+        </div>
+
+        <div class="footer-links">
+          <h3>Navigation</h3>
+          <ul role="list">
+            <li><a href="#cuisine">Notre cuisine</a></li>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#reservation">Réservation</a></li>
+            <li><a href="#acces">Accès</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-contact">
+          <h3>Contact</h3>
+          <address>
+            31 Cours Mirabeau<br />
+            13700 Marignane
+          </address>
+          <a href="tel:0781826965">07 81 82 69 65</a>
+        </div>
+
+        <div class="footer-social">
+          <h3>Suivez-nous</h3>
+          <div class="social-links">
+            <a href="#" class="social-btn" aria-label="Facebook">
+              <svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+            </a>
+            <a href="#" class="social-btn" aria-label="Instagram">
+              <svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+            </a>
+            <a href="#" class="social-btn" aria-label="TripAdvisor">
+              <svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 14H9V8h2v8zm4 0h-2V8h2v8z"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; <span id="year"></span> La Table des 2 Chefs — Tous droits réservés</p>
+        <p class="footer-credits">Restaurant climatisé &bull; Service midi et soir</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
