@@ -477,113 +477,6 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
 .menu-item-info > p { color: var(--mid); font-size: .88rem; }
 
 /* ============================================================
-   RÉSERVATION
-   ============================================================ */
-.reservation-section {
-  background: linear-gradient(135deg, #3A2A1A 0%, #5C3D20 100%);
-  color: #fff;
-}
-
-.reservation-wrapper {
-  display: grid;
-  grid-template-columns: 1fr 1.3fr;
-  gap: 4rem;
-  align-items: start;
-}
-
-.reservation-info .section-label { color: var(--ocre); }
-.reservation-info .section-title { color: #fff; }
-.reservation-info > p { color: rgba(255,255,255,.75); margin-bottom: 2rem; }
-
-.hours-block h3 {
-  font-family: var(--ff-serif);
-  font-size: 1.1rem;
-  margin-bottom: 1rem;
-  color: var(--ocre);
-}
-
-.hours-list { display: flex; flex-direction: column; gap: .5rem; }
-.hours-list li {
-  display: flex;
-  justify-content: space-between;
-  gap: 1rem;
-  padding: .45rem .75rem;
-  border-radius: 6px;
-  background: rgba(255,255,255,.06);
-  font-size: .9rem;
-}
-.hours-list .day { color: rgba(255,255,255,.8); }
-.hours-list .hours { font-weight: 700; color: #fff; }
-.hours-list .closed { color: var(--terra); }
-
-.contact-quick { margin-top: 2rem; }
-.contact-quick .btn-outline { color: #fff; border-color: rgba(255,255,255,.4); }
-.contact-quick .btn-outline:hover { background: rgba(255,255,255,.12); }
-
-/* Form */
-.reservation-form {
-  background: #fff;
-  border-radius: var(--radius);
-  padding: 2.5rem 2rem;
-  box-shadow: var(--shadow-lg);
-}
-
-.form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
-
-.form-group { display: flex; flex-direction: column; gap: .35rem; margin-bottom: 1rem; }
-.form-group label {
-  font-size: .83rem;
-  font-weight: 700;
-  letter-spacing: .04em;
-  color: var(--dark);
-  text-transform: uppercase;
-}
-.form-group label span { color: var(--terra); }
-
-.form-group input,
-.form-group select,
-.form-group textarea {
-  width: 100%;
-  padding: .75em 1em;
-  border: 1.5px solid #ddd;
-  border-radius: var(--radius);
-  font-family: var(--ff-sans);
-  font-size: .95rem;
-  color: var(--dark);
-  background: #fafafa;
-  transition: border-color var(--transition), box-shadow var(--transition);
-  outline: none;
-}
-.form-group input:focus,
-.form-group select:focus,
-.form-group textarea:focus {
-  border-color: var(--ocre);
-  box-shadow: 0 0 0 3px rgba(196,136,58,.15);
-  background: #fff;
-}
-.form-group textarea { resize: vertical; }
-
-.form-note {
-  margin-top: .85rem;
-  font-size: .78rem;
-  color: var(--light-text);
-  text-align: center;
-}
-
-.form-success {
-  display: flex;
-  align-items: center;
-  gap: .75rem;
-  margin-top: 1rem;
-  padding: 1rem 1.25rem;
-  background: #eef6ee;
-  color: #2d6a2d;
-  border-radius: var(--radius);
-  font-weight: 600;
-  font-size: .92rem;
-}
-
-/* ============================================================
    ACCÈS
    ============================================================ */
 .acces-section { background: var(--cream); }
@@ -714,7 +607,6 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
    RESPONSIVE — TABLET
    ============================================================ */
 @media (max-width: 900px) {
-  .reservation-wrapper { grid-template-columns: 1fr; gap: 2.5rem; }
   .acces-grid { grid-template-columns: 1fr; }
   .acces-map { height: 320px; }
   .footer-grid { grid-template-columns: 1fr 1fr; }
@@ -756,10 +648,6 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   .menu-grid { grid-template-columns: 1fr; }
   .menu-tabs { gap: .35rem; }
   .menu-tab { font-size: .82rem; padding: .5em 1.1em; }
-
-  /* Form */
-  .form-row { grid-template-columns: 1fr; }
-  .reservation-form { padding: 1.75rem 1.25rem; }
 
   /* Footer */
   .footer-grid { grid-template-columns: 1fr; gap: 2rem; }

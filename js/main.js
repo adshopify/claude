@@ -95,48 +95,6 @@ menuTabs.forEach(tab => {
   });
 });
 
-/* ── Formulaire de réservation : validation & soumission fictive ── */
-const form        = document.getElementById('reservation-form');
-const successMsg  = document.getElementById('form-success');
-
-if (form) {
-  /* Désactiver les dates passées */
-  const dateInput = document.getElementById('res-date');
-  if (dateInput) {
-    const today = new Date();
-    const yyyy  = today.getFullYear();
-    const mm    = String(today.getMonth() + 1).padStart(2, '0');
-    const dd    = String(today.getDate()).padStart(2, '0');
-    dateInput.setAttribute('min', `${yyyy}-${mm}-${dd}`);
-  }
-
-  form.addEventListener('submit', (e) => {
-    e.preventDefault();
-
-    if (!form.checkValidity()) {
-      /* Déclencher le rendu natif des erreurs de validation */
-      form.reportValidity();
-      return;
-    }
-
-    /* Simulation d'envoi */
-    const submitBtn = form.querySelector('[type="submit"]');
-    submitBtn.disabled = true;
-    submitBtn.textContent = 'Envoi en cours…';
-
-    setTimeout(() => {
-      form.reset();
-      submitBtn.disabled = false;
-      submitBtn.textContent = 'Envoyer la demande';
-      successMsg.hidden = false;
-      successMsg.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
-
-      /* Masquer le message après 8 s */
-      setTimeout(() => { successMsg.hidden = true; }, 8000);
-    }, 900);
-  });
-}
-
 /* ── Lien actif dans la nav au scroll ── */
 const sections  = document.querySelectorAll('section[id]');
 const navAnchors = document.querySelectorAll('.nav-link:not(.nav-cta)');
